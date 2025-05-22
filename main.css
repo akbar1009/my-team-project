@@ -363,6 +363,7 @@
     font-size: 48px;
     line-height: 48px;
     text-align: center;
+    color: white;
 }
 .meet-list {
     display: flex;
@@ -390,5 +391,81 @@
     font-style: italic;
     font-size: 15px;
     line-height: 25px;
+    color: white;
+}
+
+
+
+.some-section{
+    padding: 140px 0;
+    background-color: #012F34;
+    background-image: url(.//img/some\ img.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.some {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+}
+.some-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: white;
+}
+
+
+
+
+
+
+.contact-section {
+    padding: 0 0 128px;
+    background-color: #014E56;
+    background-image: url(.//img/contact\ back\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+.container1{
+    padding: 0 0 128px;
+    background-image: url(.//img/contact\ back\ 2.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-title {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100px;
+    color: white;
+    margin-bottom: 16px;
+}
+.contact-text {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #F67E7E;
+    margin-bottom: 32px;
+}
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.contact-span {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
     color: white;
 }
