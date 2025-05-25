@@ -57,6 +57,24 @@
     color: #014E56;
     transition: 0.3s ease;
 }
+.menu-icon{
+    display: none;
+}
+
+@media (max-width:600px){
+    .menu-icon{
+        display: block;
+    }
+    .header-btn{
+        display: none;
+    }
+    .header-list{
+        display: none;
+    }
+}
+
+
+
 
 
 
@@ -66,7 +84,6 @@
     background-image: url(.//img/hero-back\ 1.png);
     background-position: left top;
     background-repeat: no-repeat;
-
 }
 .hero {
     padding: 0 0 250px;
@@ -106,6 +123,33 @@
     font-size: 18px;
     line-height: 28px;
     color: white;
+}
+
+@media (max-width: 922px){
+    .hero-right-span{
+        display: none;
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-image: url(.//img/hero-back\ 2.png);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+}
+@media (max-width:768px){
+    .hero-title{
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 40px;
+        span{
+            font-size: 64px;
+        }
+    }
+    .hero-section{
+        background-image: none;
+    }
 }
 
 
@@ -168,7 +212,38 @@
 
 
 
-
+@media (max-width:917px){
+    .build-section{
+        background-position: top right;
+    }
+    .build{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+    .build-left-wrapper{
+        width: 500px;
+        margin-bottom: 64px;
+    }
+    .build-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
+@media (max-width:658px){
+    .build-item{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .build-left-wrapper{
+        width: 240px;
+    }
+    .build-list{
+        width: 327px;
+    }
+}
 
 
 
@@ -231,7 +306,46 @@
     margin-bottom: 32px;
 }
 
+@media (max-width:942px){
+    .deliver-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .deliver-item{
+        margin-bottom: 48px;
+    }
+    .deliver{
+        text-align: center;
+    }
+}
 
+@media (max-width:596px){
+    .deliver-list{
+        width: 327px;
+        display: flex;
+        flex-direction: column;
+    }
+    .deliver{
+        display: flex;
+        justify-content: center;
+    }
+    .deliver-item-text{
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .deliver-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .deliver-item-span{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #79C8C7;
+    }
+}
 
 
 .ready-section {
@@ -244,8 +358,7 @@
 .ready {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 260px;
+    justify-content: space-between;
 }
 .ready-title {
     font-weight: 700;
@@ -270,9 +383,22 @@
     transition: 0.3s ease;
 }
 
+@media (max-width:670px){
+    .ready{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+@media (max-width:495px){
+    .ready-title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+}
 
 
-
+}
 .site-footer{
     padding: 48px 0;
     background-color: #002529;
@@ -304,7 +430,19 @@
 }
 
 
-
+@media (max-width:650px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-left-wrapper{
+        margin-bottom: 24px;
+    }
+    .footer-links{
+        margin-top: 40px;
+    }
+}
 
 
 
@@ -438,7 +576,11 @@
     display: flex;
     justify-content: space-between;
 }
-
+.contact-right-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 .contact-title {
     font-weight: 700;
     font-size: 64px;
@@ -468,4 +610,29 @@
     font-size: 18px;
     line-height: 28px;
     color: white;
+}
+.contact-form {
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.contact-input {
+    padding: 16px 14px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+.contact-input:focus{
+    border: none;
+}
+.contact-btn{
+    width: 123px;
+    border: none;
+    color: #004047;
+    background-color: white;
+    padding: 10px 32px;
+    border-radius: 24px;
 }
