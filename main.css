@@ -484,7 +484,24 @@
     color: white;
 }
 
-
+@media (max-width:979px){
+    .about1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-hero-span{
+        display: none;
+    }
+}
+@media (max-width:664px){
+    .about-section-hero{
+        background-image: url(.//img/about-back\ mobile.png);
+    }
+    .about-hero-wrapper{
+        width: 340px;
+    }
+}
 
 
 .meet-section {
@@ -505,6 +522,7 @@
 }
 .meet-list {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     text-align: center;
@@ -562,15 +580,12 @@
 .contact-section {
     padding: 0 0 128px;
     background-color: #014E56;
-    background-image: url(.//img/contact\ back\ 1.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-}
-.container1{
-    padding: 0 0 128px;
     background-image: url(.//img/contact\ back\ 2.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+}
+.container1{
+    padding: 0 0 128px;
 }
 .contact {
     display: flex;
@@ -635,4 +650,27 @@
     background-color: white;
     padding: 10px 32px;
     border-radius: 24px;
+}
+
+
+@media (max-width:1019px){
+    .contact-section{
+        background-image: none;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:633px){
+    .contact-form{
+        width: 327px;
+    }
+    .contact-left-wrapper{
+        width: 327px    ;
+    }
 }
